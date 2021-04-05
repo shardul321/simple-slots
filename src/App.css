@@ -1,0 +1,35 @@
+body {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+h1 {
+  margin: 2rem;
+}
+
+.board {
+  border: 1rem solid black;
+  background: black;
+  width: 1500px;
+  height: 110px;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.squares {
+  background: #272727;
+  border: none;
+  font-size: 5rem;
+  font-weight: 800;
+  cursor: pointer;
+  outline: none;
+}
+.caseout:hover {
+  margin-left: 300px;
+  background-color: green;
+}
